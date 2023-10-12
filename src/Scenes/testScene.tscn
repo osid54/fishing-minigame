@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://x4txvhhaiquc"]
+
+[ext_resource type="PackedScene" uid="uid://djjgr12yrhoup" path="res://src/minigameParts/popUp.tscn" id="1_6n3ld"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="popUp" parent="." instance=ExtResource("1_6n3ld")]
+
+[node name="Camera2D" type="Camera2D" parent="."]

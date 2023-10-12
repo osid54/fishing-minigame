@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://djjgr12yrhoup"]
+
+[ext_resource type="Texture2D" uid="uid://1chipcav5a50" path="res://src/sprites/bigDouble.png" id="1_c8s8f"]
+[ext_resource type="Script" path="res://src/minigameParts/popUp.gd" id="1_nm5ed"]
+[ext_resource type="PackedScene" uid="uid://cxviec5rp75eq" path="res://src/minigameParts/target.tscn" id="2_vrrgy"]
+[ext_resource type="Texture2D" uid="uid://b5tn1skb5wdfd" path="res://src/sprites/lineCropped.png" id="4_5h8qr"]
+
+[node name="popUp" type="Node2D"]
+script = ExtResource("1_nm5ed")
+target = ExtResource("2_vrrgy")
+
+[node name="BigDouble" type="Sprite2D" parent="."]
+modulate = Color(0.0627451, 0.121569, 0.207843, 1)
+texture = ExtResource("1_c8s8f")
+
+[node name="targets" type="Node2D" parent="."]
+
+[node name="lineHolder" type="Node2D" parent="."]
+
+[node name="Line" type="Sprite2D" parent="lineHolder"]
+modulate = Color(0.768627, 0.976471, 0.968627, 1)
+position = Vector2(0, -181)
+texture = ExtResource("4_5h8qr")
